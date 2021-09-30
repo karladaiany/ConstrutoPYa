@@ -71,7 +71,7 @@ def ler_dados_do_csv():
         print(f'Falha imprevista: {fail}')
 
 @pytest.mark.parametrize('id,nome,sobrenome,email', ler_dados_do_csv())
-def testar_dados_usuarios(id,nome,sobrenome,email):    #função que testa o algo
+def testar_dados_usuarios_csv(id,nome,sobrenome,email):    #função que testa o algo
     try:
         response = requests.get(f'https://reqres.in/api/users/{id}')
         jsonResponse = response.json()
