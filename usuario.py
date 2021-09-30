@@ -85,7 +85,7 @@ def testar_dados_usuarios(id,nome,sobrenome,email):    #função que testa o alg
         print('id: {} \n nome: {} \n sobrenome: {} \n email: {}'.format(id_obtido,nome_obtido,sobrenome_obtido,email_obtido))
         print(json.dumps(jsonResponse, indent=2, sort_keys=True))
 
-        assert id_obtido == id
+        assert id_obtido == int(id)
         assert nome_obtido == nome
         assert sobrenome_obtido == sobrenome
         assert email_obtido == email
