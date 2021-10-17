@@ -7,7 +7,7 @@ import csv
 import requests
 from requests import HTTPError
 
-teste_dados_usuarios = [
+teste_dados_novos_usuarios = [
     (1, 'Juca', 'Pirama', 'juca@iterasys.com.br'),        # usuário1
     (2, 'Agatha', 'Christie', 'agatha@iterasys.com.br'),  # usuário2
 ]
